@@ -1,8 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
+import France from './json/France.json';
+import Thailand from './json/Thailand.json';
 import './App.css';
 
 function App() {
+
+  console.log(France);
+  console.log(Thailand);
+
   return (
     <div className="App">
       <header className="App-header">
