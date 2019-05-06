@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import ContainerLayout from '../../component/Layout/ContainerLayout/ContainerLayout';
-import Intro from '../../component/Intro/Intro';
-
+import AidGlobeParams from '../../component/AidGlobeParams/AidGlobeParams';
 import GlobeViz from '../../component/Visualisations/Globe/Globe';
 
 class AidGlobeContainer extends Component {
 
     state = {
-        dType: 'donor'
+        distributionType: 'donor'
     }
-    donorRecipientSelector = (e) => {
-        this.setState({ dType: e.target.dataset.value });
+    
+    donorRecipientHanlder = (e) => {
+        this.setState({ distributionType: e.target.dataset.value });
     }
 
     render() {
         return (
-            <ContainerLayout type='ContainerLayout'>
-                <Intro donorRecipientSelector={this.donorRecipientSelector} dType={this.state.dType} />
+            <ContainerLayout type='AidGlobeParamsStyle'>
+                <AidGlobeParams donorRecipientHanlder={this.donorRecipientHanlder} distributionType={this.state.distributionType} />
                 <GlobeViz/>
             </ContainerLayout>
         )

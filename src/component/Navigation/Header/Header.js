@@ -1,9 +1,9 @@
 import React from 'react';
 import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
-import classes from './Toolbar.module.css';
+import classes from './Header.module.css';
 
-const toolbar = ( props ) => (
+const header = ( props ) => (
     <header className={classes.ToolbarWrapper}>
         <div className={classes.Toolbar}>
             <Logo />
@@ -14,4 +14,4 @@ const toolbar = ( props ) => (
     </header>
 );
 
-export default toolbar;
+export default header;

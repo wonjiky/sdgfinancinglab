@@ -10,6 +10,6 @@ const containerLayout = ( props ) => {
             {props.children}
         </div>    
     );
-}
+};
 
 export default containerLayout;

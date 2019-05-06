@@ -1,15 +1,15 @@
-.Intro {
+.AidGlobeParams {
     width: 30%;
 }
 
-.Intro h1 {
+.AidGlobeParams h1 {
     font-size: 2.7rem;
     line-height: 42px;
     margin: 0 0 20px 0;
 }
 
-.Intro p {
-    margin: 0;
+.AidGlobeParams p {
+    margin: 0 0 20px 0;
     font-size: 1.2rem;
     line-height: 26px;
 }
