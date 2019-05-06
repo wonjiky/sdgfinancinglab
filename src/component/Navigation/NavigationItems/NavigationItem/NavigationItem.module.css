@@ -1,0 +1,26 @@
+.NavigationItem {
+    margin: 0;
+    /* text-align: center; */
+    display: flex;
+    cursor: pointer;
+}
+
+.NavigationItem a {
+    font-weight: 700;
+    text-decoration: none;
+    height: 100%;
+    width:100%;
+    color: #4e4e4e;
+    padding: 16px 10px;
+    display: block;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem .selected {
+    background-image: -webkit-gradient(to bottom right, #234c9f, #26c9cf);
+    background-image: linear-gradient(to bottom right, #234c9f, #26c9cf);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}

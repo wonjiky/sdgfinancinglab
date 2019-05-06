@@ -1,31 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import France from './json/France.json';
-import Thailand from './json/Thailand.json';
+import {Switch, Route, Redirect, BrowserRouter as Router} from 'react-router-dom';
+import Layout from './component/Layout/Layout';
+import ExploreContainer from './container/ExploreContainer/ExploreContainer';
+import AidGlobeContainer from './container/AidGlobeContainer/AidGlobeContainer';
+import SDGRankingContainer from './container/SDGRankingContainer/SDGRankingContainer';
 import './App.css';
 
-function App() {
-
-  console.log(France);
-  console.log(Thailand);
-
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Layout>
+        <Switch>
+          <Route exact path='/' render={(props) => <AidGlobeContainer {...props} /> } /> 
+          <Route path='/explore' render={(props) => <ExploreContainer {...props} /> } /> 
+          <Route path='/sdgranking' render={(props) => <SDGRankingContainer {...props} /> } />
+          <Redirect to='/' /> 
+        </Switch>
+      </Layout>
+    </Router>
   );
 }
 

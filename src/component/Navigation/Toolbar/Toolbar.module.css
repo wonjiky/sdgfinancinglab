@@ -1,0 +1,28 @@
+.ToolbarWrapper {
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color:white;
+    position: fixed;
+}
+
+.Toolbar {
+    height: 100px;
+    width: 70%;
+    min-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.ToolbarWrapper nav {
+    height: 100%;
+}
+
