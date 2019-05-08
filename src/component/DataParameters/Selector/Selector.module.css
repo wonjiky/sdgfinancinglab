@@ -1,4 +1,7 @@
 .AidGlobe_Country,
-.AidGlobe_SDG {
-    margin-bottom: 10px;
+.AidGlobe_SDG,
+.FinanceType,
+.FlowType,
+.CountrySelector {
+    margin-bottom: 20px;
 }

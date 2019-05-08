@@ -4,7 +4,7 @@ import classes from './Logo.module.css';
 
 const logo = ( props ) => (
     <div className={classes.Logo}>
-        <img src={SDG_Logo} />
+        <img src={SDG_Logo} alt='The SDG Financing Lab'/>
     </div>
 );
 
