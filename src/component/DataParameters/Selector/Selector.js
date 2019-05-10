@@ -9,7 +9,8 @@ const selector = ( props ) => {
         <Select
             placeholder={props.placeHolder}
             className={className}
-            // isClearable={true}
+            isClearable={props.isClearable}
+            styles={props.styles}
             isSearchable={true}
             isMulti={props.isMulti}
             value={props.value}

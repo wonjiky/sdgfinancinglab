@@ -9,18 +9,18 @@ const countrySearchBar = ( props ) => {
             <Selector 
                 // selectorType={props.paramsLabel[0].SelectorType} 
                 // placeHolder={props.paramsLabel[0].PlaceHolder} 
-                // value={props.countryDisplayValue[0]} 
+                value={props.firstSelectedCountry} 
                 isMulti={false}
-                // list={props.countryList[0]}
-                selectorHandler={props.firstCountrySelectorHandler} />
+                list={props.donorList}
+                selectorHandler={props.firstSelectorHandler} />
             <div className={classes.ArrowDown} />
             <Selector 
                 // selectorType={props.paramsLabel[1].SelectorType} 
                 // placeHolder={props.paramsLabel[1].PlaceHolder} 
-                // value={props.countryDisplayValue[1]} 
+                value={props.secondSelectedCountry} 
                 isMulti={false} 
-                // list={props.countryList[1]} 
-                selectorHandler={props.secondCountrySelectorHandler} />
+                list={props.recipientList} 
+                selectorHandler={props.secondSelectorHandler} />
         </div>
         
     )

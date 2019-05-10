@@ -5,8 +5,8 @@ const distributionTypeSelector = ( props ) => {
     
     return (
         <ul className={classes[props.type]}>
-            <li className={props.distributionType === 'Donor' ? classes.Selected : null} onClick={props.donorRecipientHanlder} data-value='Donor'> Donor </li>
-            <li className={props.distributionType === 'Recipient' ? classes.Selected : null} onClick={props.donorRecipientHanlder} data-value='Recipient'> Recipient </li>
+            <li className={props.distributionType === 'donors' ? classes.Selected : null} onClick={props.donorRecipientHanlder} data-value='donors'> Donor </li>
+            <li className={props.distributionType === 'recipients' ? classes.Selected : null} onClick={props.donorRecipientHanlder} data-value='recipients'> Recipient </li>
         </ul>
     );
 };

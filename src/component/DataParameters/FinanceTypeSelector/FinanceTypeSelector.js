@@ -9,11 +9,9 @@ const financeTypeSelector = ( props ) => {
             <p>Type of Financial Flow</p>
             <Selector 
                 selectorType={props.paramsLabel[3].SelectorType} 
-                placeHolder={props.paramsLabel[3].PlaceHolder} 
                 isMulti={false}
-                value={false}
-                selectorHandler={props.financeTypeHandler}
-                // defaultValue={props.financeTypeList[0]}
+                value={props.financeFlow}
+                selectorHandler={props.financeFlowHandler}
                 list={props.financeTypeList} />
         </div>
     );

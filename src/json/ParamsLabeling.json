@@ -1,24 +1,20 @@
 [
     {
-        "type": "Donor",
         "SelectorType": "CountrySelector",
         "PlaceHolder": "Select a Donor...",
         "isMulti": false
     },
     {
-        "type": "Recpient",
         "SelectorType": "CountrySelector",
         "PlaceHolder": "Select a Recipient...",
         "isMulti": false
     },
     {
-        "type": "FlowType",
         "SelectorType": "FlowType",
         "PlaceHolder": "Select a flow type",
         "isMulti": false
     },
     {
-        "type": "FinanceType",
         "SelectorType": "FinanceType",
         "PlaceHolder": "Select a finance type",
         "isMulti": true
